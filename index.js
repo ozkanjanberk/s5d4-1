@@ -71,11 +71,11 @@ export function cardOlustur(item) {
   h3.textContent = item.sorgu;
   const p1 = document.createElement("p");
   p1.classList.add("ulke");
-  p1.textContent = item.ülkeKodu;
+  p1.textContent = `${item.ülke} (${item.ülkeKodu})`;
   const p2 = document.createElement("p");
-  p2.textContent = `Enlem: ${item.enlem} Boylam: ${item.boylam}`;
+  p2.textContent = `Enlem: ${item.enlem} Boylam:${item.boylam}`;
   const p3 = document.createElement("p");
-  p3.textContent = `${item.şehir}`;
+  p3.textContent = `Şehir: ${item.şehir}`;
   const p4 = document.createElement("p");
   p4.textContent = `Saat dilimi: ${item.saatdilimi}`;
   const p5 = document.createElement("p");
